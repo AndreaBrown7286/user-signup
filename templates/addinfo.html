@@ -1,0 +1,32 @@
+{% extends "basic.html" %}
+
+{% block content %}
+
+<h2>User SignUp</h2>
+    <form action = "/add" method="POST">
+        <label>
+            Username
+            <input type="text" name="Username"/>
+        </label>
+    </form>
+    <form action = "/add" method="POST">
+        <label>
+            Password
+            <input type="password" name="Password"/>
+        </label>
+    </form>
+    <form action = "/add" method="POST">
+        <label>
+            Verify Password
+            <input type="password" name="Verify Password"/>
+        </label>
+    </form>
+    <form action = "/add" method="POST">
+        <label>
+            Email(optional)
+            <input type="text" name="Email"/>
+        </label>
+        <input type="submit" value="Submit Query"/>
+    </form>
+
+{% endblock %}
